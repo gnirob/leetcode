@@ -1,0 +1,29 @@
+{
+  "name": "leetcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "rm -rf ./dist/",
+    "start": "rollup -c -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gnirob/leetcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "UNLICENSED",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/gnirob/leetcode/issues"
+  },
+  "homepage": "https://github.com/gnirob/leetcode#readme",
+  "devDependencies": {
+    "prettier": "^1.17.0",
+    "rollup": "^1.10.0",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^1.9.3",
+    "typescript": "^3.4.3"
+  }
+}
