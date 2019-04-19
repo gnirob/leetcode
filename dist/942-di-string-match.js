@@ -6,12 +6,11 @@ const diStringMatch = (S) => {
     const original = createOrderedNumbers(S.length + 1);
     const result = [];
     for (const char of S) {
-        result.push(original[methodNames[char]]());
+        const methodName = methodNames.get(char);
+        const item = original[methodName]();
+        result.push(item);
     }
     result.push(...original);
     return result;
 };
-const methodNames = {
-    'I': 'shift',
-    'D': 'pop'
-};
+const methodNames = new Map([['I', 'shift'], ['D', 'pop']]);

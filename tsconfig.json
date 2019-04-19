@@ -1,6 +1,9 @@
 {
     "compilerOptions": {
         "target": "esnext",
-        "moduleResolution": "node"
+        "moduleResolution": "node",
+        "noEmit": true,
+        "strict": true,
+        "alwaysStrict": false
     }
 }

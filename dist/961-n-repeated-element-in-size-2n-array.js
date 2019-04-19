@@ -6,4 +6,5 @@ const repeatedNTimes = (A) => {
         }
         set.add(number);
     }
+    throw new Error('Bad argument with no answer.');
 };
