@@ -1,18 +1,19 @@
-const fs = require('fs');
-const typescript = require('rollup-plugin-typescript');
-const prettier = require('rollup-plugin-prettier');
+import fs from 'fs';
+import typescript from 'rollup-plugin-typescript';
+import prettier from 'rollup-plugin-prettier';
 
 const filenames = fs
     .readdirSync('./src/')
     .filter((name) => name.endsWith('.ts'));
 
-/** @type {import('rollup').RollupOptions} */
-module.exports = filenames.map((name) => ({
-    input: `./src/${name}`,
-    output: {
-        dir: './dist/',
-        format: 'esm'
-    },
-    plugins: [typescript(), prettier()],
-    treeshake: false
-}));
+export default filenames.map(
+    (name) => /** @type {import('rollup').RollupOptions} */ ({
+        input: `./src/${name}`,
+        output: {
+            dir: './dist/',
+            format: 'esm'
+        },
+        plugins: [typescript(), prettier()],
+        treeshake: false
+    })
+);
