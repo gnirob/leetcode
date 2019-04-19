@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prestart": "rm -rf ./dist/",
+    "prestart": "rm -rf ./dist/*",
     "start": "rollup -c -w"
   },
   "repository": {
