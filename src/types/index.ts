@@ -4,6 +4,12 @@ interface TreeNode {
     right: TreeNode;
 }
 
+interface ListNode {
+    val: number;
+    next: ListNode;
+}
+
 export {
-    TreeNode
+    TreeNode,
+    ListNode
 };
