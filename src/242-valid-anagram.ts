@@ -4,7 +4,7 @@ const isAnagram = (s: string, t: string): boolean => {
     }
 
     const charCodeStart = 'a'.charCodeAt(0);
-    const counts: number[] = Array.from({length: 26}, () => 0);
+    const counts: number[] = new Array(26).fill(0);
 
     for (let i = 0; i < s.length; i++) {
         counts[s[i].charCodeAt(0) - charCodeStart]++;
