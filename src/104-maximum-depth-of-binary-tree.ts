@@ -1,4 +1,4 @@
-import {TreeNode} from './types';
+import {TreeNode} from './model';
 
 const maxDepth = (root: TreeNode): number => {
     if (!root) {

@@ -1,4 +1,4 @@
-import {TreeNode} from './types';
+import {TreeNode} from './model';
 
 const mergeTrees = (t1: TreeNode, t2: TreeNode): TreeNode => {
     if (!t1) {

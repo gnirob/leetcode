@@ -1,4 +1,4 @@
-import {ListNode} from "./types";
+import {ListNode} from './model';
 
 const deleteNode = (node: ListNode): void => {
     const {next} = node;
