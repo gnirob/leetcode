@@ -11,8 +11,7 @@ export default filenames.map(
         input: `./src/${name}`,
         output: {
             dir: './dist/',
-            format: 'esm',
-            sourcemap: false
+            format: 'esm'
         },
         plugins: [typescript(), prettier()],
         treeshake: false
