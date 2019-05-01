@@ -4,7 +4,6 @@
         "moduleResolution": "node",
         "noEmit": true,
         "strict": true,
-        "alwaysStrict": false,
-        "sourceMap": false
+        "alwaysStrict": false
     }
 }
