@@ -1,4 +1,4 @@
-import createOrderedNumbers from "./helpers/create-ordered-numbers";
+import {createOrderedNumbers} from "./helpers";
 
 const diStringMatch = (S: string): number[] => {
     const original = createOrderedNumbers(S.length + 1);

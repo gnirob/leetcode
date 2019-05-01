@@ -1,4 +1,4 @@
-import createOrderedNumbers from './helpers/create-ordered-numbers';
+import {createOrderedNumbers} from './helpers';
 
 const selfDividingNumbers = (left: number, right: number): number[] => {
     return createOrderedNumbers(right - left + 1, left).filter(isSelfDividing);
